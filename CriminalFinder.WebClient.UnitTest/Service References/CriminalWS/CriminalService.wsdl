@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="CriminalService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:57298/CriminalService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:57298/CriminalService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:57298/CriminalService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/CriminalFinder.WebService" />
+      <xsd:import schemaLocation="http://localhost:57298/CriminalService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/CriminalFinder.BusinessLayer" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ICriminalService_GetCriminals_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCriminals" />
+  </wsdl:message>
+  <wsdl:message name="ICriminalService_GetCriminals_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCriminalsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICriminalService_SearchCriminals_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchCriminals" />
+  </wsdl:message>
+  <wsdl:message name="ICriminalService_SearchCriminals_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchCriminalsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICriminalService_GetCriminal_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCriminal" />
+  </wsdl:message>
+  <wsdl:message name="ICriminalService_GetCriminal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCriminalResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICriminalService_UpdateCriminal_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCriminal" />
+  </wsdl:message>
+  <wsdl:message name="ICriminalService_UpdateCriminal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCriminalResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICriminalService_CreateCriminal_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateCriminal" />
+  </wsdl:message>
+  <wsdl:message name="ICriminalService_CreateCriminal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateCriminalResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICriminalService_DeleteCriminal_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCriminal" />
+  </wsdl:message>
+  <wsdl:message name="ICriminalService_DeleteCriminal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCriminalResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICriminalService_DeleteCriminals_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCriminals" />
+  </wsdl:message>
+  <wsdl:message name="ICriminalService_DeleteCriminals_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCriminalsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICriminalService_QuickSearchCriminalsByName_InputMessage">
+    <wsdl:part name="parameters" element="tns:QuickSearchCriminalsByName" />
+  </wsdl:message>
+  <wsdl:message name="ICriminalService_QuickSearchCriminalsByName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:QuickSearchCriminalsByNameResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ICriminalService">
+    <wsdl:operation name="GetCriminals">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICriminalService/GetCriminals" message="tns:ICriminalService_GetCriminals_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICriminalService/GetCriminalsResponse" message="tns:ICriminalService_GetCriminals_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchCriminals">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICriminalService/SearchCriminals" message="tns:ICriminalService_SearchCriminals_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICriminalService/SearchCriminalsResponse" message="tns:ICriminalService_SearchCriminals_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCriminal">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICriminalService/GetCriminal" message="tns:ICriminalService_GetCriminal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICriminalService/GetCriminalResponse" message="tns:ICriminalService_GetCriminal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCriminal">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICriminalService/UpdateCriminal" message="tns:ICriminalService_UpdateCriminal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICriminalService/UpdateCriminalResponse" message="tns:ICriminalService_UpdateCriminal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateCriminal">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICriminalService/CreateCriminal" message="tns:ICriminalService_CreateCriminal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICriminalService/CreateCriminalResponse" message="tns:ICriminalService_CreateCriminal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCriminal">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICriminalService/DeleteCriminal" message="tns:ICriminalService_DeleteCriminal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICriminalService/DeleteCriminalResponse" message="tns:ICriminalService_DeleteCriminal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCriminals">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICriminalService/DeleteCriminals" message="tns:ICriminalService_DeleteCriminals_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICriminalService/DeleteCriminalsResponse" message="tns:ICriminalService_DeleteCriminals_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="QuickSearchCriminalsByName">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICriminalService/QuickSearchCriminalsByName" message="tns:ICriminalService_QuickSearchCriminalsByName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICriminalService/QuickSearchCriminalsByNameResponse" message="tns:ICriminalService_QuickSearchCriminalsByName_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ICriminalService" type="tns:ICriminalService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetCriminals">
+      <soap:operation soapAction="http://tempuri.org/ICriminalService/GetCriminals" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchCriminals">
+      <soap:operation soapAction="http://tempuri.org/ICriminalService/SearchCriminals" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCriminal">
+      <soap:operation soapAction="http://tempuri.org/ICriminalService/GetCriminal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCriminal">
+      <soap:operation soapAction="http://tempuri.org/ICriminalService/UpdateCriminal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateCriminal">
+      <soap:operation soapAction="http://tempuri.org/ICriminalService/CreateCriminal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCriminal">
+      <soap:operation soapAction="http://tempuri.org/ICriminalService/DeleteCriminal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCriminals">
+      <soap:operation soapAction="http://tempuri.org/ICriminalService/DeleteCriminals" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QuickSearchCriminalsByName">
+      <soap:operation soapAction="http://tempuri.org/ICriminalService/QuickSearchCriminalsByName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CriminalService">
+    <wsdl:port name="BasicHttpBinding_ICriminalService" binding="tns:BasicHttpBinding_ICriminalService">
+      <soap:address location="http://localhost:57298/CriminalService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

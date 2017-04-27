@@ -1,0 +1,6 @@
+E:\learningProjects\GitProjects\CrimListManagement\CriminalFinder\CriminalFinder.BusinessLayer\bin\Debug\CriminalFinder.BusinessLayer.dll.config
+E:\learningProjects\GitProjects\CrimListManagement\CriminalFinder\CriminalFinder.BusinessLayer\bin\Debug\CriminalFinder.BusinessLayer.dll
+E:\learningProjects\GitProjects\CrimListManagement\CriminalFinder\CriminalFinder.BusinessLayer\bin\Debug\CriminalFinder.BusinessLayer.pdb
+E:\learningProjects\GitProjects\CrimListManagement\CriminalFinder\CriminalFinder.BusinessLayer\obj\Debug\CriminalFinder.BusinessLayer.csprojResolveAssemblyReference.cache
+E:\learningProjects\GitProjects\CrimListManagement\CriminalFinder\CriminalFinder.BusinessLayer\obj\Debug\CriminalFinder.BusinessLayer.dll
+E:\learningProjects\GitProjects\CrimListManagement\CriminalFinder\CriminalFinder.BusinessLayer\obj\Debug\CriminalFinder.BusinessLayer.pdb

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:57298/CriminalService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/CriminalFinder.WebService" />
+  <xs:import schemaLocation="http://localhost:57298/CriminalService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/CriminalFinder.BusinessLayer" />
+  <xs:element name="GetCriminals">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCriminalsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/CriminalFinder.WebService" minOccurs="0" name="GetCriminalsResult" nillable="true" type="q1:CriminalServiceResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SearchCriminals">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/CriminalFinder.BusinessLayer" minOccurs="0" name="searchCriteria" nillable="true" type="q2:CriminalSearchCriteria" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SearchCriminalsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/CriminalFinder.WebService" minOccurs="0" name="SearchCriminalsResult" nillable="true" type="q3:CriminalServiceResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCriminal">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCriminalResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/CriminalFinder.WebService" minOccurs="0" name="GetCriminalResult" nillable="true" type="q4:CriminalServiceResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateCriminal">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/CriminalFinder.BusinessLayer" minOccurs="0" name="criminal" nillable="true" type="q5:CriminalInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateCriminalResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/CriminalFinder.WebService" minOccurs="0" name="UpdateCriminalResult" nillable="true" type="q6:CriminalServiceResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateCriminal">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/CriminalFinder.BusinessLayer" minOccurs="0" name="criminal" nillable="true" type="q7:CriminalInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateCriminalResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/CriminalFinder.WebService" minOccurs="0" name="CreateCriminalResult" nillable="true" type="q8:CriminalServiceResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteCriminal">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteCriminalResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/CriminalFinder.WebService" minOccurs="0" name="DeleteCriminalResult" nillable="true" type="q9:CriminalServiceResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteCriminals">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/CriminalFinder.BusinessLayer" minOccurs="0" name="criminalList" nillable="true" type="q10:ArrayOfCriminalInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteCriminalsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/CriminalFinder.WebService" minOccurs="0" name="DeleteCriminalsResult" nillable="true" type="q11:CriminalServiceResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QuickSearchCriminalsByName">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="searchCriteria" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QuickSearchCriminalsByNameResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/CriminalFinder.WebService" minOccurs="0" name="QuickSearchCriminalsByNameResult" nillable="true" type="q12:CriminalServiceResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

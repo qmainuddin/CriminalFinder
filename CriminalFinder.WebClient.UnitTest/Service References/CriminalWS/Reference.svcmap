@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="3da6a918-c62c-4201-bf81-f55ed152538e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:57298/CriminalService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CriminalService.xsd" MetadataType="Schema" ID="b2978aa4-6746-4457-912a-f04a1cabbfbf" SourceId="1" SourceUrl="http://localhost:57298/CriminalService.svc?xsd=xsd0" />
+    <MetadataFile FileName="CriminalService.wsdl" MetadataType="Wsdl" ID="ffa2b3ba-702e-4114-b63b-3ea5386a677e" SourceId="1" SourceUrl="http://localhost:57298/CriminalService.svc?wsdl" />
+    <MetadataFile FileName="CriminalService.disco" MetadataType="Disco" ID="9b7e4ce8-d84a-4184-b233-78ceb677f8eb" SourceId="1" SourceUrl="http://localhost:57298/CriminalService.svc?disco" />
+    <MetadataFile FileName="CriminalService1.xsd" MetadataType="Schema" ID="19b23fdd-6f0b-4aed-85d2-7341ecafa478" SourceId="1" SourceUrl="http://localhost:57298/CriminalService.svc?xsd=xsd1" />
+    <MetadataFile FileName="CriminalService2.xsd" MetadataType="Schema" ID="27319b98-7180-4659-b9f8-748b05075405" SourceId="1" SourceUrl="http://localhost:57298/CriminalService.svc?xsd=xsd2" />
+    <MetadataFile FileName="CriminalService3.xsd" MetadataType="Schema" ID="daa2ee00-32f1-4ad9-9e53-1c992e851be0" SourceId="1" SourceUrl="http://localhost:57298/CriminalService.svc?xsd=xsd3" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
