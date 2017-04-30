@@ -60,8 +60,8 @@ namespace CriminalFinder.WebClient.Controllers
                 {
                     var credential = new NetworkCredential
                     {
-                        UserName = "mainuddin.test@gmail.com",  // replace with valid value
-                        Password = "Qo0_+3$jkl"  // replace with valid value
+                        UserName = "",  // replace with valid value
+                        Password = ""  // replace with valid value
                     };
                     smtp.Credentials = credential;
                     smtp.Host = "smtp.gmail.com";
